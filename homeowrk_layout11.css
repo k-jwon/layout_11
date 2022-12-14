@@ -1,0 +1,36 @@
+#wrap {
+    width: 800px;
+    display: grid;
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 200px 200px 400px 150px;
+    grid-template-areas: 
+    "box1 box1"
+    "box2 box2"
+    "box3 box4"
+    "box5 box5";    
+    grid-gap: 1rem;
+}
+header {
+    background-color: #ccc;
+    grid-area: box1;
+}
+nav {
+    width: 55%;
+    height: 85%;
+    background-color: #666;
+    margin: 10px;
+}
+section {
+    background-color: #eee;
+    grid-area: box2;
+}
+
+article, aside, footer {
+    border: 1px solid black;
+}
+footer {
+    grid-area: box5;
+}
